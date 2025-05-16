@@ -36,3 +36,14 @@ This repository provides a complete pipeline to analyze Fe-rich, Fe-poor, and bo
 * NumPy, Pandas, Matplotlib, SciPy, scikit-learn
 
 ---
+
+## HPC Resources at HPC
+
+#SBATCH -N 20                    # SMIC allows at max 20 nodes at a time (although 86 overall)
+#SBATCH -n 20                   # SMIC allows number of MPI 20 per node  
+##SBATCH -c 12                  # 6 threads per MPI process
+#SBATCH -t 15:00:00
+#SBATCH -p checkpt
+#SBATCH -A hpc_bb_karki3
+#SBATCH -o  gb.out
+#SBATCH -e  err.out
