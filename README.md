@@ -37,7 +37,7 @@ This repository provides a complete pipeline to analyze Fe-rich, Fe-poor, and bo
 
 ---
 
-## HPC Resources at HPC
+## HPC Resources at LSU SMIC
 
 #SBATCH -N 20                    # SMIC allows at max 20 nodes at a time (although 86 overall)
 #SBATCH -n 20                   # SMIC allows number of MPI 20 per node  
